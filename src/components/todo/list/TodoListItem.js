@@ -9,7 +9,7 @@ export const TodoListItem = ({ todo, index, handleDelete, handleToggle}) => {
         c.preventDefault();
         handleToggle(todo);
       }} 
-        style ={{ textDecoration: todo.done === true ?'line-through': null}}>
+      style ={{ textDecoration: todo.done === true ?'line-through': null}}>
         
         {index + 1}. {todo.desc}
         
