@@ -1,3 +1,5 @@
+import { getSystemErrorMap } from "util";
+
 export const todoReducer = (state = [], action) => {
   switch (action.type) {
     case 'add':
@@ -12,9 +14,10 @@ export const todoReducer = (state = [], action) => {
         action.payload.id === todo.id ? {
           ...todo,
           done: !todo.done
-        } : { ...todo }
+          
+        } : { ...todo } 
       );
-
+      console.log(updated);
       return [...updated];
       
     default:

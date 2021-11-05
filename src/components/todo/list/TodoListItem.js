@@ -15,6 +15,7 @@ export const TodoListItem = ({ todo, index, handleDelete, handleToggle}) => {
         
       </p>
       <button
+        type='delete'
         className='btn btn-danger'
         onClick={ (c) => {
           c.preventDefault();
