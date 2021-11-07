@@ -21,6 +21,7 @@ describe('TODOS page', () => {
       .first()
       .get('button[type=delete]')
       .click()
+      .get('.list-group > .list-group-item:first > p')
       .should('not.exist');
   });
 });
